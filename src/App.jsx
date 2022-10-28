@@ -8,7 +8,6 @@ import { AiFillFilter } from "react-icons/ai";
 import { MdOutlineAvTimer } from "react-icons/md";
 import { GoDiffAdded } from "react-icons/go";
 import { RiInputCursorMove } from "react-icons/ri";
-import { AiFillFile } from "react-icons/ai";
 import Button from "./components/Button";
 import { TextField } from "./components/TextField";
 import Delete from "./components/Delete";
@@ -94,7 +93,7 @@ const MovableItem = ({
 
       if (dropResult) {
         const { name } = dropResult;
-        const { DO_IT, IN_PROGRESS, AWAITING_REVIEW, DONE } = COLUMN_NAMES;
+        const { DO_IT, IN_PROGRESS, DONE } = COLUMN_NAMES;
         switch (name) {
           case IN_PROGRESS:
             changeItemColumn(item, IN_PROGRESS);
