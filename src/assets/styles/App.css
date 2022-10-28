@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "DavidLibre";
+  src: local("DavidLibre"),
+    url(../fonts/DavidLibre-Regular.ttf) format("truetype");
+}
+body {
+  background-color: #e8eaed;
+}
+
+p {
+  font-family: DavidLibre, serif;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  height: max-content;
+  min-height: 100px;
+  width: 160px;
+  margin: 10px;
+  border-radius: 10px;
+  /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); */
+  /* border: 2px solid #7d7d7d;  */
+  /* display: flex;
+  justify-content: center;
+  flex-wrap: wrap; */
+}
+
+/* .do-it-column {
+  background-color: #fff0f0;
+} */
+
+.in-progress-column {
+  background-color: #fbfbfb;
+  width: 20rem;
+  height: 30rem;
+  margin-left: 20rem;
+  margin-top: 5rem;
+}
+
+.awaiting-review-column {
+  background-color: #fffada;
+}
+
+.done-column {
+  background-color: #f5ffe5;
+}
+
+.movable-item {
+  border-radius: 5px;
+  background-color: #fafdff;
+  height: 75px;
+  width: 120px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+.main-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  border-bottom: 1px solid;
+  padding: 6px 0;
+}
+
+.inner-box {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.bottomDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
