@@ -88,7 +88,8 @@ const MovableItem = ({
   });
 
   const [{ isDragging }, drag] = useDrag({
-    item: { index, name, currentColumnName, type: "Our" },
+    type: "Our",
+    item: () => ({ index, name, currentColumnName }),
     end: (item, monitor) => {
       const dropResult = monitor.getDropResult();
 
