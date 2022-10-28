@@ -193,6 +193,8 @@ const Column = ({ children, className, title }) => {
                 return <Button />
               } else if (item?.props?.name === "Delete") {
                 return <Delete />
+              }else{
+                return null
               }
             }) : children
         }
