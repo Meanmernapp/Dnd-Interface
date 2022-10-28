@@ -46,7 +46,7 @@ const MovableItem = ({
   const ref = useRef(null);
 
   const [, drop] = useDrop({
-    accept: "Our first type",
+    accept: "Our",
     hover(item, monitor) {
       if (!ref.current) {
         return;
@@ -88,7 +88,7 @@ const MovableItem = ({
   });
 
   const [{ isDragging }, drag] = useDrag({
-    item: { index, name, currentColumnName, type: "Our first type" },
+    item: { index, name, currentColumnName, type: "Our" },
     end: (item, monitor) => {
       const dropResult = monitor.getDropResult();
 
@@ -130,7 +130,7 @@ const MovableItem = ({
 
 const Column = ({ children, className, title }) => {
   const [{ isOver, canDrop }, drop] = useDrop({
-    accept: "Our first type",
+    accept: "Our",
     drop: () => ({ name: title }),
     collect: (monitor) => ({
       isOver: monitor.isOver(),
