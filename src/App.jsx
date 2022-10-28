@@ -98,9 +98,6 @@ const MovableItem = ({
           case IN_PROGRESS:
             changeItemColumn(item, IN_PROGRESS);
             break;
-          case AWAITING_REVIEW:
-            changeItemColumn(item, AWAITING_REVIEW);
-            break;
           case DONE:
             changeItemColumn(item, DONE);
             break;
